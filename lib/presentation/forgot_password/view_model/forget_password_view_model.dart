@@ -8,7 +8,7 @@ import '../../common/state_renderer/state_renderer.dart';
 import '../../common/state_renderer/state_renderer_impl.dart';
 
 class ForgetPasswordViewModel extends BaseViewModel
-    with ForgetPasswordInputs, ForgetPasswordOutputs {
+    implements ForgetPasswordInputs, ForgetPasswordOutputs {
   final StreamController _emailStreamController =
       StreamController<String>.broadcast();
   final StreamController _areAllInputsValidStreamController =

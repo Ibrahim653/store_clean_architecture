@@ -63,7 +63,6 @@ class _HomePageState extends State<HomePage> {
               _getStoresWidget(snapshot.data?.stores),
             ],
           );
-          ;
         });
   }
 

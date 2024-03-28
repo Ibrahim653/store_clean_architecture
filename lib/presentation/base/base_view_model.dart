@@ -5,7 +5,7 @@ import 'package:rxdart/rxdart.dart';
 import '../common/state_renderer/state_renderer_impl.dart';
 
 abstract class BaseViewModel extends BaseViewModelInputs
-    with BaseViewModelOutputs {
+    implements BaseViewModelOutputs {
   final StreamController _inputStreamController =
       BehaviorSubject<FlowState>();
 

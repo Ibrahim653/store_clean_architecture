@@ -12,7 +12,7 @@ import '../../common/state_renderer/state_renderer_impl.dart';
 import '../../resourses/strings_manager.dart';
 
 class RegisterViewModel extends BaseViewModel
-    with RegisterViewModelInput, RegisterViewModelOutput {
+    implements RegisterViewModelInput, RegisterViewModelOutput {
   StreamController userNameStreamController =
       StreamController<String>.broadcast();
   StreamController mobileNumberStreamController =

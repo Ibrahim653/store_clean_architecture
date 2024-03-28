@@ -11,7 +11,7 @@ import '../../common/state_renderer/state_renderer_impl.dart';
 
 
   class StoreDetailsViewModel extends BaseViewModel
-    with StoreDetailsViewModelInput, StoreDetailsViewModelOutput {
+    implements StoreDetailsViewModelInput, StoreDetailsViewModelOutput {
   final _storeDetailsStreamController = BehaviorSubject<StoreDetails>();
 
   final StoreDetailsUsecase storeDetailsUseCase;

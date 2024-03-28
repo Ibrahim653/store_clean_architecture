@@ -7,7 +7,7 @@ import 'package:advanced_app/presentation/common/state_renderer/state_renderer.d
 import 'package:advanced_app/presentation/common/state_renderer/state_renderer_impl.dart';
 
 class LoginViewModel extends BaseViewModel  
-    with LoginViewModelInputs, LoginViewModelOutputs {
+    implements LoginViewModelInputs, LoginViewModelOutputs {
   final StreamController _userNameStreamController =
       StreamController<String>.broadcast();
   final StreamController _passwordStreamController =
